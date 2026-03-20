@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Bookings</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">📅 Bookings</div>
+    <ul class="side-nav">
+      <a class="side-link" href="admindashboard.html"></a></li>
+      <li><a class="side-link" href="petprofiles.html">🐶 Pet Profiles</a></li>
+      <li><a class="side-link" href="booking.html">📅 Bookings</a></li>
+      <li><a class="side-link" href="store.html">🛍 Store</a></li>
+      <li><a class="side-link" href="deliverytracking.html">🚚 Delivery Tracking</a></li>
+      <li><a class="side-link" href="feedback.html">💬 Feedback</a></li>
+      <li><a class="side-link" href="settings.html">⚙️ Settings</a></li>
+      <li><a class="side-link" href="cctv.html"> 📹cctv</a></li>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+    <button onclick="back()" class="btn class-btn">back</button>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div><div class="page-title">Bookings</div><div class="small">Manage bookings & reservations</div></div>
+    </div>
+    <div class="nav-right">
+  <div class="profile-trigger" id="profileTrigger">
+    <div class="avatar-box">
+      <span class="emoji-avatar">👨‍💼</span>
+    </div>
+    <span class="arrow-icon" id="arrowIcon">▼</span>
+    
+    <div class="profile-menu" id="profileMenu">
+      <div class="menu-item">
+        <div class="icon-box blue-tint">👤</div>
+        <div class="user-details">
+          <span class="user-name">View Profile</span>
+          <span class="user-sub">Saman Fernando</span>
+        </div>
+      </div>
+      <hr>
+      <div class="menu-item logout">
+        <div class="icon-box red-tint">↳</div>
+        <span>Logout</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="table-card">
+      <table>
+        <thead><tr><th>Booking ID</th><th>Pet</th><th>Owner</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>B-1023</td><td>Bruno</td><td>Kamal</td><td>2025-11-01</td><td class="small">Confirmed</td></tr>
+          <tr><td>B-1024</td><td>Mimi</td><td>Nirosha</td><td>2025-11-03</td><td class="small">Pending</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

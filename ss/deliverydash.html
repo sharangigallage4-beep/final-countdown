@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Delivery Dashboard</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">🚚 Delivery</div>
+    <ul class="side-nav">
+      <a class="side-link" href="admindashboard.html"></a></li>
+      <li><a class="side-link" href="petprofiles.html">🐶 Pet Profiles</a></li>
+      <li><a class="side-link" href="booking.html">📅 Bookings</a></li>
+      <li><a class="side-link" href="store.html">🛍 Store</a></li>
+      <li><a class="side-link" href="deliverytracking.html">🚚 Delivery Tracking</a></li>
+      <li><a class="side-link" href="feedback.html">💬 Feedback</a></li>
+      <li><a class="side-link" href="settings.html">⚙️ Settings</a></li>
+      <li><a class="side-link" href="cctv.html"> 📹cctv</a></li>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+    <button onclick="back()" class="btn class-btn">back</button>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="page-title">Delivery Panel</div>
+        <div class="small">Track & update your assigned deliveries.</div>
+      </div>
+    </div>
+    
+
+    <div class="cards">
+      <div class="card"><div class="num">8</div><div class="label">On The Way</div></div>
+      <div class="card"><div class="num">14</div><div class="label">Completed</div></div>
+    </div>
+
+    <div class="table-card">
+      <h3 style="margin-bottom:10px">Assigned Tasks</h3>
+      <table>
+        <thead><tr><th>ID</th><th>Customer</th><th>Pet</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>D-5542</td><td>Kamal</td><td>Bruno</td><td><span class="tag onway">On the Way</span></td></tr>
+          <tr><td>D-5543</td><td>Nirosha</td><td>Mimi</td><td><span class="tag delivered">Delivered</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

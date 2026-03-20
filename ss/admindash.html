@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Admin Dashboard</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">🛠 PetWell — Admin</div>
+    <ul class="side-nav">
+      <li><a class="side-link" href="admindash.html">🏠 Dashboard</a></li>
+      <li><a class="side-link" href="petprofiles.html">🐾 Pet Profiles</a></li>
+      <li><a class="side-link" href="booking.html">📅 Bookings</a></li>
+      <li><a class="side-link" href="store.html">🛍 Store</a></li>
+      <li><a class="side-link" href="deliverytracking.html">🚚 Delivery Tracking</a></li>
+      <li><a class="side-link" href="feedback.html">💬 Feedback</a></li>
+      <li><a class="side-link" href="settings.html">⚙️ Settings</a></li>
+    </ul>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+    <button onclick="back()" class="btn class-btn">back</button>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="page-title">Admin Control Panel</div>
+        <div class="small">System overview and management tools.</div>
+      </div>
+    </div>
+    <div class="nav-right">
+  <div class="profile-trigger" id="profileTrigger">
+    <div class="avatar-box">
+      <span class="emoji-avatar">👨‍💼</span>
+    </div>
+    <span class="arrow-icon" id="arrowIcon">▼</span>
+    
+    <div class="profile-menu" id="profileMenu">
+      <div class="menu-item">
+        <div class="icon-box blue-tint">👤</div>
+        <div class="user-details">
+          <span class="user-name">View Profile</span>
+          <span class="user-sub">Saman Fernando</span>
+        </div>
+      </div>
+      <hr>
+      <div class="menu-item logout">
+        <div class="icon-box red-tint">↳</div>
+        <span>Logout</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="cards">
+      <div class="card"><div class="num">102</div><div class="label">Users</div></div>
+      <div class="card"><div class="num">56</div><div class="label">Bookings</div></div>
+      <div class="card"><div class="num">17</div><div class="label">Deliveries</div></div>
+      <div class="card"><div class="num">9</div><div class="label">Feedbacks</div></div>
+    </div>
+
+    <div class="table-card">
+      <h3 style="margin-bottom:10px">Quick Actions</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="petprofiles.html">View Pets</a>
+        <a class="btn btn-primary" href="booking.html">View Bookings</a>
+        <a class="btn btn-soft" href="settings.html">Settings</a>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

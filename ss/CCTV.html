@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV </title>
+    <link rel="stylesheet" href="style.css"></head>
+</head>
+<body>
+    <div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">🚚 Delivery</div>
+    <ul class="side-nav">
+      <a class="side-link" href="admindashboard.html"></a></li>
+      <li><a class="side-link" href="petprofiles.html">🐶 Pet Profiles</a></li>
+      <li><a class="side-link" href="booking.html">📅 Bookings</a></li>
+      <li><a class="side-link" href="store.html">🛍 Store</a></li>
+      <li><a class="side-link" href="deliverytracking.html">🚚 Delivery Tracking</a></li>
+      <li><a class="side-link" href="feedback.html">💬 Feedback</a></li>
+      <li><a class="side-link" href="settings.html">⚙️ Settings</a></li>
+      <li><a class="side-link" href="cctv.html"> 📹cctv</a></li>
+    </ul>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+    <button onclick="back()" class="btn class-btn">back</button>
+  </aside>
+
+    <div class="container">
+
+        <h1>📹 CCTV</h1>
+        <p class="subtitle">Live monitoring of all pet care areas</p>
+        <div class="nav-right">
+  <div class="profile-trigger" id="profileTrigger">
+    <div class="avatar-box">
+      <span class="emoji-avatar">👨‍💼</span>
+    </div>
+    <span class="arrow-icon" id="arrowIcon">▼</span>
+    
+    <div class="profile-menu" id="profileMenu">
+      <div class="menu-item">
+        <div class="icon-box blue-tint">👤</div>
+        <div class="user-details">
+          <span class="user-name">View Profile</span>
+          <span class="user-sub">Saman Fernando</span>
+        </div>
+      </div>
+      <hr>
+      <div class="menu-item logout">
+        <div class="icon-box red-tint">↳</div>
+        <span>Logout</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="camera-grid">
+
+            <!-- Camera 1 -->
+            <div class="camera-card">
+                <h3>Play Area</h3>
+                <video src="" controls poster="https://cdn-icons-png.flaticon.com/512/483/483947.png"></video>
+            </div>
+
+            <!-- Camera 2 -->
+            <div class="camera-card">
+                <h3>Sleeping Room</h3>
+                <video src="" controls poster="https://cdn-icons-png.flaticon.com/512/483/483947.png"></video>
+            </div>
+
+            <!-- Camera 3 -->
+            <div class="camera-card">
+                <h3>Outdoor Yard</h3>
+                <video src="" controls poster="https://cdn-icons-png.flaticon.com/512/483/483947.png"></video>
+            </div>
+
+            <!-- Camera 4 -->
+            <div class="camera-card">
+                <h3>Entrance</h3>
+                <video src="" controls poster="https://cdn-icons-png.flaticon.com/512/483/483947.png"></video>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

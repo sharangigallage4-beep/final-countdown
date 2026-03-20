@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Owner Dashboard</title>
+   <link rel="stylesheet" href="ownerdashboard.css"></head>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>🐾 PetWell</h2>
+
+        <ul class="menu">
+            <li onclick="showSection('dashboard')" class="active">📊 Dashboard</li>
+            <li onclick="showSection('booking')"><a href="owner booking.html" >📝Booking</a></li>
+           <li onclick="showSection('store')"> <a href="owner store.html">🛍️ Store</a></li>
+        </ul>
+
+       <button class="logout-pill">
+  <span class="logout-icon">⮞</span> 
+  Logout
+</button>
+    </div>
+
+    <div class="main">
+
+      
+
+    <div class="container">
+        <h1>📝 Book a Service</h1>
+        <p class="subtitle">Choose a service for your pet</p>
+
+        <div class="booking-box">
+
+            <label>Select Pet</label>
+            <select>
+                <option>Bruno (Dog)</option>
+                <option>Milo (Cat)</option>
+                <option>Bella (Puppy)</option>
+            </select>
+
+            <label>Select Service</label>
+            <select>
+                <option>Grooming</option>
+                <option>Daycare</option>
+                <option>Vet Checkup</option>
+                <option>Training Session</option>
+            </select>
+
+            <label>Select Date</label>
+            <input type="date">
+
+            <label>Select Time</label>
+            <input type="time">
+
+            <button class="book-btn">Confirm Booking</button>
+        </div>
+    </div>
+
+</body>
+</html>

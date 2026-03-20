@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Owner Dashboard</title>
+   <link rel="stylesheet" href="ownerdashboard.css"></head>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>🐾 PetWell</h2>
+
+        <ul class="menu">
+            <li onclick="showSection('dashboard')" class="active">📊 Dashboard</li>
+            <li onclick="showSection('booking')"><a href="owner booking.html" >📝Booking</a></li>
+           <li onclick="showSection('store')"><a href="owner store.html">🛍️ Store</a></li>
+           
+        </ul>
+
+        <button class="logout-pill">
+  <span class="logout-icon">⮞</span> 
+  Logout
+</button>
+    </div>
+
+    <div class="main">
+
+        <!-- DASHBOARD SECTION -->
+        <section id="dashboard" class="section active">
+            <h1>Welcome Pet Owner 🐶</h1>
+
+            <div class="cards">
+                <div class="card">Pets Registered <span>3</span></div>
+                <div class="card">Upcoming Bookings <span>2</span></div>
+                <div class="card">Orders <span>5</span></div>
+            </div>
+
+            <div class="recent">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li>🐾 Added new pet: Bruno</li>
+                    <li>📦 Ordered Dog Food</li>
+                    <li>🛁 Booking Confirmed for Grooming</li>
+                </ul>
+            </div>
+        </section>
+
+       
+
+    <script src="script.js"></script>
+</body>
+</html>

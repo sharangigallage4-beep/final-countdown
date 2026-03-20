@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Pet Profiles</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">🐾 Pet Profiles</div>
+    <ul class="side-nav">
+      <a class="side-link" href="admindashboard.html"></a></li>
+      <li><a class="side-link" href="petprofiles.html">🐶 Pet Profiles</a></li>
+      <li><a class="side-link" href="booking.html">📅 Bookings</a></li>
+      <li><a class="side-link" href="store.html">🛍 Store</a></li>
+      <li><a class="side-link" href="deliverytracking.html">🚚 Delivery Tracking</a></li>
+      <li><a class="side-link" href="feedback.html">💬 Feedback</a></li>
+      <li><a class="side-link" href="settings.html">⚙️ Settings</a></li>
+      <li><a class="side-link" href="cctv.html"> 📹cctv</a></li>
+    </ul>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+    <button onclick="back()" class="btn class-btn">back</button>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="page-title">Pet Profiles</div>
+      </div>
+      <div class="nav-right">
+  <div class="profile-trigger" id="profileTrigger">
+    <div class="avatar-box">
+      <span class="emoji-avatar">👨‍💼</span>
+    </div>
+    <span class="arrow-icon" id="arrowIcon">▼</span>
+    
+    <div class="profile-menu" id="profileMenu">
+      <div class="menu-item">
+        <div class="icon-box blue-tint">👤</div>
+        <div class="user-details">
+          <span class="user-name">View Profile</span>
+          <span class="user-sub">Saman Fernando</span>
+        </div>
+      </div>
+      <hr>
+      <div class="menu-item logout">
+        <div class="icon-box red-tint">↳</div>
+        <span>Logout</span>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="actions">
+        <a class="btn btn-primary" href="#add">Add Pet</a>
+      </div>
+    </div>
+
+    <div id="add" class="table-card" style="margin-bottom:14px">
+      <form id="petForm">
+        <div class="form-row">
+          <input name="name" class="input" placeholder="Pet Name" required>
+          <input name="type" class="input" placeholder="Type (Dog, Cat...)" required>
+          <input name="age" class="input" placeholder="Age" required>
+          <input name="owner" class="input" placeholder="Owner Name" required>
+        </div>
+        <div style="text-align:right">
+          <button class="btn btn-primary" type="submit">Add Pet</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="pet-grid"></div>
+
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

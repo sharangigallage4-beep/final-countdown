@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Delivery Tracking</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">🚚 Delivery</div>
+    <ul class="side-nav">
+      <a class="side-link" href="admindashboard.html"></a></li>
+      <li><a class="side-link" href="petprofiles.html">🐶 Pet Profiles</a></li>
+      <li><a class="side-link" href="booking.html">📅 Bookings</a></li>
+      <li><a class="side-link" href="store.html">🛍 Store</a></li>
+      <li><a class="side-link" href="deliverytracking.html">🚚 Delivery Tracking</a></li>
+      <li><a class="side-link" href="feedback.html">💬 Feedback</a></li>
+      <li><a class="side-link" href="settings.html">⚙️ Settings</a></li>
+      <li><a class="side-link" href="cctv.html"> 📹cctv</a></li>
+    </ul>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+    <button onclick="back()" class="btn class-btn">back</button>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div><div class="page-title">Delivery Tracking</div><div class="small">Search & filter deliveries</div></div>
+      <div class="nav-right">
+  <div class="profile-trigger" id="profileTrigger">
+    <div class="avatar-box">
+      <span class="emoji-avatar">👨‍💼</span>
+    </div>
+    <span class="arrow-icon" id="arrowIcon">▼</span>
+    
+    <div class="profile-menu" id="profileMenu">
+      <div class="menu-item">
+        <div class="icon-box blue-tint">👤</div>
+        <div class="user-details">
+          <span class="user-name">View Profile</span>
+          <span class="user-sub">Saman Fernando</span>
+        </div>
+      </div>
+      <hr>
+      <div class="menu-item logout">
+        <div class="icon-box red-tint">↳</div>
+        <span>Logout</span>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="actions">
+        <input id="deliverySearch" class="input" placeholder="Search deliveries..." style="width:220px">
+        <select id="deliveryStatus" class="input" style="width:150px">
+          <option value="">All</option>
+          <option value="onway">On the Way</option>
+          <option value="delivered">Delivered</option>
+          <option value="cancel">Cancelled</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="table-card">
+      <table id="deliveryTable">
+        <thead><tr><th>ID</th><th>Agent</th><th>Customer</th><th>Pet</th><th>Status</th><th>ETA</th></tr></thead>
+        <tbody>
+          <tr data-status="onway"><td>D-5542</td><td>Tharindu</td><td>Kamal</td><td>Bruno</td><td><span class="tag onway">On the Way</span></td><td>12 mins</td></tr>
+          <tr data-status="delivered"><td>D-5543</td><td>Minuri</td><td>Nirosha</td><td>Mimi</td><td><span class="tag delivered">Delivered</span></td><td>Completed</td></tr>
+          <tr data-status="cancel"><td>D-5544</td><td>Ravi</td><td>Sam</td><td>Max</td><td><span class="tag cancel">Cancelled</span></td><td>-</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Owner Dashboard</title>
+    <link rel="stylesheet" href="ownerdashboard.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+        <h2>🐾 PetWell</h2>
+
+        <ul class="menu">
+            <li onclick="showSection('dashboard')" class="active">📊 Dashboard</li>
+            <li onclick="showSection('booking')"><a href="owner booking.html" >📝Booking</a></li>
+           <li onclick="showSection('store')"> <a href="owner store.html">🛍️ Store</a></li>
+          
+        </ul>
+
+        <button class="logout-pill">
+  <span class="logout-icon">⮞</span> 
+  Logout
+</button>
+    </div>
+
+    <div class="main">
+
+    <section id="store">
+        <h1>owner store 🛍️</h1>
+
+        <div class="store-grid">
+
+            <div class="item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1998/1998610.png">
+                <h3>Dog Food</h3>
+                <p class="price">Rs. 2,500</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+                <h3>Pet Shampoo</h3>
+                <p class="price">Rs. 1,200</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="https://cdn-icons-png.flaticon.com/512/3050/3050151.png">
+                <h3>Pet Collar</h3>
+                <p class="price">Rs. 950</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png">
+                <h3>Cat Toy</h3>
+                <p class="price">Rs. 850</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>

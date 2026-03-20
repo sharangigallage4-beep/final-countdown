@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>admin Dashboard</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">🐾 PetWell — admin</div>
+    <ul class="side-nav">
+      <li><a class ="side-link"href="admin Dashboard"></a></li>
+      <li><a class="side-link" href="petprofiles.html">🐶 Pet Profiles</a></li>
+      <li><a class="side-link" href="booking.html">📅 Bookings</a></li>
+      <li><a class="side-link" href="store.html">🛍 Store</a></li>
+      <li><a class="side-link" href="deliverytracking.html">🚚 Delivery Tracking</a></li>
+      <li><a class="side-link" href="feedback.html">💬 Feedback</a></li>
+      <li><a class="side-link" href="settings.html">⚙️ Settings</a></li>
+      <li><a class="side-link" href="cctv.html"> 📹cctv</a></li>
+    </ul>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+    <button onclick="back()" class="btn class-btn">back</button>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="page-title">Admin Dashboard</div>
+        <div class="small">Welcome back — manage your pets & bookings.</div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card"><div class="num">12</div><div class="label">My Pets</div></div>
+      <div class="card"><div class="num">4</div><div class="label">Active Bookings</div></div>
+      <div class="card"><div class="num">2</div><div class="label">Pending Deliveries</div></div>
+    </div>
+
+    <div class="table-card">
+      <h3 style="margin-bottom:10px">Recent Activity</h3>
+      <ul class="small">
+        <li>Booking confirmed for Bruno (Nov 1)</li>
+        <li>Order delivered to Kamal (Nov 2)</li>
+      </ul>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
